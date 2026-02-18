@@ -25,13 +25,17 @@ void main(){
         stdout.write("Monto a depositar: ");
         double precio = double.parse(stdin.readLineSync()!);
         saldo = saldo+precio;
+        print("El dinero se desposito exitosamente");
         break;
 
       case 3:
+      print("\n----------------------------");
         stdout.write("Monto a retirar: ");
         double retiro = double.parse(stdin.readLineSync()!);
         if(retiro<=saldo){
           saldo=saldo-retiro;
+          print("Se retiró exitosamente s/$retiro");
+          print("Saldo actual: $saldo");
         }else{
           print("No cuentas con suficiente saldo");
           print("Saldo actual: $saldo");

@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(){
-  double saldo = 100;
+  double saldo = 350;
   int opcion;
 
   do{
